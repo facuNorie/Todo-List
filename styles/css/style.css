@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, #510860, #690c75, #830e8b, #9f10a0, #bc0eb5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 75%;
+  background-color: #ececf8;
+  overflow-y: auto;
+}
+.container .container__div-h1 {
+  padding: 10px;
+  border-bottom: 1px solid #510860;
+}
+.container .container__h1 {
+  font-size: 2.5em;
+  color: #510860;
+  text-align: center;
+}
+
+.form {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.form .form__text {
+  background-color: #510860;
+  color: ghostwhite;
+  font-size: 1.5em;
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  width: 600px;
+}
+.form .form__text:focus {
+  outline: none;
+}
+.form .form__text::placeholder {
+  color: #ad10ad98;
+}
+.form .form__btn {
+  font-size: 2em;
+  width: 50px;
+  border: 1px solid #000;
+  margin: 5px;
+  color: ghostwhite;
+  background-color: #9f10a0;
+}
+.form .form__btn:focus {
+  outline: none;
+}
+.form .form__btn:active {
+  background-color: #510860;
+}
+
+.list {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.list .list__div {
+  border: 1px solid #af399f;
+  padding: 7px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list .list__div .list__item {
+  color: #510860;
+  margin-left: 10px;
+}
+.list .list__div .list__btn {
+  border: none;
+  font-size: 1.1em;
+  color: #8a8a8a;
+  margin-right: 10px;
+}
+.list .list__div .list__btn:focus {
+  outline: none;
+}
+.list .list__div .list__btn:active {
+  color: #510860;
+}
+
+/*# sourceMappingURL=style.css.map */
