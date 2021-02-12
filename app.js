@@ -31,8 +31,9 @@ const generateItem = (item)=>{
     document.querySelector(".form__text").value = "";
     // DELETE BTN 
     button.addEventListener("click",()=>{
-        document.querySelector(".list").removeChild(div);
+        if(confirm("Segur@ que quiere remover la nota?")) document.querySelector(".list").removeChild(div);
+        else return;
+        
+        
     });
 }
-
-// AÑADIR "2DA OPORTUNIDAD EN DELETE BTN"
